@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- doctype declares the type of document. it tells the browser the version of html
+                     we're using. In this case, html5-->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--This line tells the browser that when this file is open, all the text in this webpage is encoded in utf-8.
+                               charset means characterset.It's a type of meta element.
+                               Meta element gives extra meta data to the html document.
+                               utf-8 is a type of encoding and is the standard encding that you should use when using html5 bcos it includes all the international symbols
+                               and all the characters in the unicode character table, including emojis.
+                               to make sure your website can be rendered correctly on browsers from international visitors.
+                             Using the wrong type of encoding will mean that the webpage won't be rendered properly and will have loads of
+                             characters and words that won't make sense.-->
+
+  <title>Bolaji's Personal Site</title>
+  <!--the title is what you see on the tab heading on your browser-->
+</head>
+<!--the head tag holds info about the page and tells the browser how it should handle the page-->
+
+<body>
+  <!--in the image tag below, instead of sourcing the image from a webpage, you can source it from your laptop by putting it in the same folder as this html <fieldset>
+      and putting the name of the image file inside the quote in the src="" part of the img tag. if it's in a folder within the folder this html file is in, put "foldername/nameoftheimage"
+      i.e. put in the path of the image-->
+  </fieldset>
+  <!--INTRODUCTION AND PICTURE OF MYSELF-->
+  <table cellspacing="20">
+    <tr>
+      <td><img src="https://dogtime.com/assets/uploads/2011/03/puppy-development.jpg" alt="profile picture"></td>
+      <td>
+        <h1>A Ayoka</h1>
+        <p> <em>Mechanical Engineer</p>
+        <!--the <p> tag creats a paragraph. everything within it will be in the same paragraph-->
+        <br />
+        <!--creates a line space like when you press enter on microsoft word-->
+        <p>I graduated with a first class degree in <strong>Mechanical Engineering</strong>.</p>
+      </td>
+    </tr>
+  </table>
+
+  <hr size="4" noshade /> <!--creates an horizontal line-->
+  <!--EDUCATION SECTION-->
+  <h3>Education</h3>
+  <ul>
+    <!--this creates an ordered list i.e. bullet points with dots-->
+    <li>MEng (Hons) <strong><a href="https://www.me.columbia.edu/what-mechanical-engineering">Mechanical Engieering</a></li>
+    <li>International Degree Foundation Programme</li>
+  </ul>
+  <hr size="4" noshade/>
+  <!--WORK EXPERIENCE SECTION-->
+  <h3>Work Experience</h3>
+
+  <table border="1" cellspacing="10">
+    <!--creates a table. by default, the table doesn't have any lines or borders. so "border=1" creates a border around the table and set the pixel to 1-->
+    <thead>
+      <!--creates a table head with the table created above-->
+      <tr>
+        <!--creates a row. so the codes that follow will be put into this row. it has to come after thead. you go from top row to bottom row (you can't put data in using columns, you have to use the row system)-->
+        <th>Date</th>
+        <!--creates the table header cell. basically the data that goes into the table header i.e. title of each column.The data will be in bold by default-->
+        <th>Experience</th>
+        <!--this is also a table header cell for the column next to the "Date" header. They'll be on the same row because they're inside the same "tr" element-->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018-present</td>
+        <!--td is the table data and it's what puts the data in different columns. everything with 1 td element will be in one column-->
+        <td>Engineer</td>
+        <!--and because this is another td element, it'll create another column.-->
+      </tr>
+      <tr>
+        <td>2016-2017</td>
+        <td>Engineering Industrial Placement Student</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="4" noshade/>
+<!--SKILLS SECTION-->
+  <h3>Skills</h3>
+
+  <table cellspacing="10">
+      <tr><!--matlab row-->
+        <td>Matlab</td>
+        <td>⭐️⭐️</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>⭐️⭐️</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>⭐️</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>⭐️⭐️</td>
+  </table>
+<!--SECTION WITH HYPERLINKS-->
+  <hr size="4" noshade />
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact.html">Contact me</a>
+  <a href="skills.html">Table of Skills (created using nested tables on html)</a>
+</body>
+
+</html>
+<!-- closing html tag. tthe tag tells the browser that everything between the opening
+             and closing tag will be html code-->
+<!-- the meta element can have other attributes besides the charset. e.g the description tag is what will be shown when the website is on a google search result page.
+      it's used like this: <meta name="description" content="insert whatever you want the description to be".
+      you can also use the same format to define the author. just replace description with author. check a documentation (like mdn webdocs)
+      to see all the different attributes the meta element can have-->
